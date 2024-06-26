@@ -2,7 +2,7 @@
 - 👀 I’m interested in Computers 
 - 🌱 I’m currently learning CS Engineering
 - 😄 Pronouns: He/Him
-- ⚡ Skills : C,C++
+- ⚡ Skills : C,C++,Python(Basic)
 
 <!---
 karthik-khandige/karthik-khandige is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
