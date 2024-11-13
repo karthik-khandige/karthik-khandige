@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Karthik K | About Me</title>
+  <style>
+    /* General reset and body setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white; /* Background color */
+      color: #fff;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: orange;
+    }
+
+    /* Timeline container */
+    .timeline {
+      position: relative;
+      margin: 0 auto;
+      padding-left: 30px;
+    }
+
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 18px;
+      width: 2px;
+      height: 100%;
+      background: orange;
+    }
+
+    /* Timeline items (event points) */
+    .timeline-item {
+      margin: 40px 0;
+      position: relative;
+    }
+
+    .timeline-item .date {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #000000;
+    }
+
+    .timeline-item .description {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-top: 10px;
+      color: #000000;
+    }
+
+    /* Circle markers on the timeline */
+    .timeline-item .dot {
+      width: 20px;
+      height: 20px;
+      background-color: orange;
+      border-radius: 50%;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Animation: Fade in each event */
+    .timeline-item.fade-in {
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Styling for the timeline items' icons */
+    .timeline-item .icon {
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+	<!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Karthik K</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="skill.html" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="education.html" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+  <div class="container">
+    <h1 class="section-title">Education Timeline</h1>
+    <div class="timeline">
+      <!-- SSLC -->
+      <div class="timeline-item fade-in" style="animation-delay: 0.5s;">
+        <div class="dot"></div>
+        <div class="icon">🎓</div>
+        <div class="date">2020</div>
+        <div class="description">SSLC - Vittal Jaycees English Medium School, Vittal</div>
+      </div>
+
+      <!-- PUC -->
+      <div class="timeline-item fade-in" style="animation-delay: 1s;">
+        <div class="dot"></div>
+        <div class="icon">🏫</div>
+        <div class="date">2022</div>
+        <div class="description">PUC - Vivekananda Pre-University College, Puttur</div>
+      </div>
+
+      <!-- BE (Expected Graduation) -->
+      <div class="timeline-item fade-in" style="animation-delay: 1.5s;">
+        <div class="dot"></div>
+        <div class="icon">💻</div>
+        <div class="date">2026 (Expected)</div>
+        <div class="description">BE in Computer Science Engineering - Vivekananda College of Engineering and Technology</div>
+      </div>
+    </div>
+  </div>
+  
+  <!--===== FOOTER =====-->
+         <footer class="footer">
+            <p class="footer__copy">&copy; 2024 Copyrights.All rights reserved.</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>
