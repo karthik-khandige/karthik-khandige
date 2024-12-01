@@ -210,13 +210,13 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 260px;
+  width: 460px;
 }
 .home__blob {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 420px;
+  width: 360px;
 }
 
 /*BUTTONS*/
